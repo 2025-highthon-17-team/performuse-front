@@ -4,7 +4,9 @@ import { useState } from "react";
 import CustomTextField from "../../../components/textfield/CustomTextField";
 import { CustomButton } from "../../../components/button/CustomButton";
 import Style from "../login/login.module.css";
+import { useNavigate } from "react-router-dom";
 export default function LoginPage() {
+  const navigate = useNavigate();
   const [loginText, setLoginText] = useState<string>("");
   const loginChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setLoginText(e.target.value);
@@ -57,6 +59,9 @@ export default function LoginPage() {
           <span
             className={Sen.text_primary_neutral}
             style={{ cursor: "pointer" }}
+            onClick={() => {
+              navigate("/id");
+            }}
           >
             회원가입
           </span>

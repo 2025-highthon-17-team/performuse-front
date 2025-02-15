@@ -14,13 +14,15 @@ export default function NickNamePage() {
   };
 
   const handleLogin = async () => {
+    const id: string | null = localStorage.getItem("id") ?? "leegeh1213";
+    const password: string | null = localStorage.getItem("pw") ?? "1234qwer";
+    const email: string | null =
+      localStorage.getItem("email") ?? "leegeh1213@gmail.com";
     try {
-      // await signup(
-      //   // loginText, passwordText
-      // ); // 로그인 요청 보내기
-      alert("로그인 성공!");
+      await signup(id, password, email, loginText);
+      alert("회원가입 성공!");
     } catch (error) {
-      alert(`로그인 실패! ${error}`);
+      alert(`회원가입 실패! ${error}`);
     }
   };
   return (
@@ -46,7 +48,7 @@ export default function NickNamePage() {
 
       {/* 버튼을 화면 하단에 배치 */}
       <div className={Style.ButtonContainer}>
-        <CustomButton label="다음" onClick={() => {}} />
+        <CustomButton label="다음" onClick={handleLogin} />
       </div>
     </div>
   );
