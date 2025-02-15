@@ -1,5 +1,5 @@
 import React from "react";
-import Style from "./Alternativeitem.module.css";
+import Style from "./Alternativeitem.module.css";
 import Sen from "../../../styles/sementic.module.css";
 
 interface Props {
