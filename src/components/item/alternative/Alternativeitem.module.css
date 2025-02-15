@@ -1,0 +1,28 @@
+@import "../../../styles/sementic.module.css";
+
+.container {
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 90%;
+  padding: 15px 15px;
+  border: 1px solid var(--background-alternative);
+  background-color: var(--background-alternative);
+  margin-bottom: 10px;
+}
+
+.endtoend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* 이미지와 텍스트를 옆에 배치하기 위한 컨테이너 */
+.userContainer {
+  display: flex;
+  align-items: center;
+}
+
+.userContainer img {
+  margin-right: 10px; /* 이미지와 텍스트 사이 간격 */
+}
