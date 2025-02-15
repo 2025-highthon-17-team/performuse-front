@@ -6,7 +6,6 @@ import { BrowserMultiFormatReader, Result } from "@zxing/library";
 const QRCodeScanner: React.FC = () => {
   const webcamRef = useRef<Webcam>(null);
   const [height, setHeight] = useState<number>(0);
-  const [initialized, setInitialized] = useState<boolean>(false);
 
   const videoConstraints = {
     facingMode: "environment", // 후면 카메라 사용
