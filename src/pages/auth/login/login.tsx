@@ -20,10 +20,10 @@ export default function LoginPage() {
       return;
     }
     try {
-      await login(loginText, passwordText); // 로그인 요청 보내기
+      await login(loginText, passwordText);
       alert("로그인 성공!");
     } catch (error) {
-      alert("로그인 실패!");
+      alert(`로그인 실패! ${error}`);
     }
   };
   return (
