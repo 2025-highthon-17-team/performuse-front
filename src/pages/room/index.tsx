@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import QuizComponent from "../../components/quiz/QuizComponent";
+import RockandChamComponent from "../../components/quiz/rockandcham";
 
 export default function RoomPage() {
   const roomId = useParams<{ id: string }>().id;
@@ -9,7 +9,7 @@ export default function RoomPage() {
   };
   return (
     <div>
-      <QuizComponent
+      {/* <QuizComponent
         title="퀴즈 제목"
         question="퀴즈 질문"
         point={100}
@@ -17,7 +17,8 @@ export default function RoomPage() {
         type="주관식"
         sendAnswer={sendAnswer}
         selections={["선택1", "선택2", "선택3", "선택4"]}
-      />
+      /> */}
+      <RockandChamComponent type="rock" time={5} sendAnswer={sendAnswer} />
     </div>
   );
 }
