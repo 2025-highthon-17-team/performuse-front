@@ -1,0 +1,52 @@
+@import "../../styles/sementic.module.css";
+
+.full {
+  width: 80%;
+  align-items: center;
+  margin: 0 auto;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+}
+.labelColor {
+  color: var(--line-normal);
+  font-weight: bold;
+}
+.centerBox {
+  display: flex;
+  justify-content: center;
+}
+
+.textField {
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid var(--primary-normal);
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid var(--line-normal);
+  background-color: transparent;
+  color: var(--line-normal);
+  padding-left: 10px;
+  font-weight: 600;
+  transition:
+    border-bottom 0.3s ease,
+    background-color 0.3s ease;
+}
+.textField::placeholder {
+  color: var(--line-alternative);
+  font-weight: 600;
+}
+
+.textField:focus {
+  border-bottom: 2px solid var(--primary-normal); /* 포커스 색상 */
+  background-color: transparent;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}

@@ -88,5 +88,5 @@ export function useAxiosCRUD() {
     [request, setAuthriazation],
   );
 
-  return { setAuthriazation, login, signup };
+  return { login, signup };
 }
