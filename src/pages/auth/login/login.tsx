@@ -54,7 +54,12 @@ export default function LoginPage() {
           style={{ textAlign: "center", marginTop: 20 }}
         >
           계정이 없으신가요?{" "}
-          <span className={Sen.text_primary_neutral}>회원가입</span>
+          <span
+            className={Sen.text_primary_neutral}
+            style={{ cursor: "pointer" }}
+          >
+            회원가입
+          </span>
         </div>
       </div>
     </div>
