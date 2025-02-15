@@ -8,7 +8,7 @@ interface ButtonProps {
 }
 export const CustomButton: React.FC<ButtonProps> = ({ label, onClick }) => {
   return (
-    <div className={Sen.umjunsik}>
+    <div className={Style.umjunsik}>
       <button className={Style.button} onClick={onClick}>
         <label className={`${Sen.headline_2} ${Style.labelColor}`}>
           {label}
