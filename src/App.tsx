@@ -9,6 +9,7 @@ import LoginPage from "./pages/auth/login/login";
 import IdPage from "./pages/auth/id/id";
 import PwPage from "./pages/auth/pw/pw";
 import EmailPage from "./pages/auth/email/email";
+import NickNamePage from "./pages/auth/nickname/nickname";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/id" element={<IdPage />} />
           <Route path="/pw" element={<PwPage />} />
           <Route path="/email" element={<EmailPage />} />
+          <Route path="/nickname" element={<NickNamePage />} />
         </Routes>
       </BrowserRouter>
       <Navigationbar />

@@ -1,20 +1,27 @@
 import Sen from "../../../styles/sementic.module.css";
 import { useState } from "react";
 import CustomTextField from "../../../components/textfield/CustomTextField";
-import Style from "./pw.module.css";
+import Style from "./nickname.module.css";
 import { CustomButton } from "../../../components/button/CustomButton";
-import { useNavigate } from "react-router-dom";
+import { useAxiosCRUD } from "../../../hooks/client";
+import { sign } from "crypto";
 
-export default function PwPage() {
-  const navigate = useNavigate();
+export default function NickNamePage() {
   const [loginText, setLoginText] = useState<string>("");
+  const { signup } = useAxiosCRUD();
   const loginChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setLoginText(e.target.value);
   };
 
-  const handleNext = () => {
-    localStorage.setItem("pw", loginText);
-    navigate("/email");
+  const handleLogin = async () => {
+    try {
+      // await signup(
+      //   // loginText, passwordText
+      // ); // 로그인 요청 보내기
+      alert("로그인 성공!");
+    } catch (error) {
+      alert(`로그인 실패! ${error}`);
+    }
   };
   return (
     <div className={Style.container}>
@@ -23,14 +30,14 @@ export default function PwPage() {
           style={{ fontWeight: "bold" }}
           className={`${Style.smallBox} ${Sen.title_2}`}
         >
-          비밀번호를 <br />
+          닉네임을 <br />
           입력해주세요
         </div>
         <div className={Style.spacer}></div>
         <CustomTextField
-          placeholder="비밀번호를 입력해주세요"
-          label="비밀번호"
-          type="password"
+          placeholder="닉네임을 입력해주세요"
+          label="닉네임"
+          type="text"
           value={loginText}
           onChange={loginChange}
         />
@@ -39,7 +46,7 @@ export default function PwPage() {
 
       {/* 버튼을 화면 하단에 배치 */}
       <div className={Style.ButtonContainer}>
-        <CustomButton label="다음" onClick={handleNext} />
+        <CustomButton label="다음" onClick={() => {}} />
       </div>
     </div>
   );

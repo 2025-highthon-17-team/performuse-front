@@ -3,11 +3,18 @@ import { useState } from "react";
 import CustomTextField from "../../../components/textfield/CustomTextField";
 import Style from "./id.module.css";
 import { CustomButton } from "../../../components/button/CustomButton";
+import { useNavigate } from "react-router-dom";
 
 export default function IdPage() {
+  const navigate = useNavigate();
   const [loginText, setLoginText] = useState<string>("");
   const loginChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setLoginText(e.target.value);
+  };
+
+  const handleNext = () => {
+    localStorage.setItem("id", loginText);
+    navigate("/pw");
   };
   return (
     <div className={Style.container}>
@@ -32,7 +39,7 @@ export default function IdPage() {
 
       {/* 버튼을 화면 하단에 배치 */}
       <div className={Style.ButtonContainer}>
-        <CustomButton label="다음" onClick={() => {}} />
+        <CustomButton label="다음" onClick={handleNext} />
       </div>
     </div>
   );

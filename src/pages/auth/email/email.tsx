@@ -3,12 +3,20 @@ import { useState } from "react";
 import CustomTextField from "../../../components/textfield/CustomTextField";
 import Style from "./email.module.css";
 import { CustomButton } from "../../../components/button/CustomButton";
+import { useNavigate } from "react-router-dom";
 
 export default function EmailPage() {
+  const navigate = useNavigate();
   const [loginText, setLoginText] = useState<string>("");
   const loginChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setLoginText(e.target.value);
   };
+
+  const handleNext = () => {
+    localStorage.setItem("email", loginText);
+    navigate("/nickname");
+  };
+
   return (
     <div className={Style.container}>
       <div className={Style.boxs}>
@@ -32,7 +40,7 @@ export default function EmailPage() {
 
       {/* 버튼을 화면 하단에 배치 */}
       <div className={Style.ButtonContainer}>
-        <CustomButton label="다음" onClick={() => {}} />
+        <CustomButton label="다음" onClick={handleNext} />
       </div>
     </div>
   );
