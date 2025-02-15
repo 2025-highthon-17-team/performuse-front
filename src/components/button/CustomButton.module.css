@@ -1,0 +1,37 @@
+@import "../../styles/sementic.module.css";
+
+.button {
+  width: 80%;
+  height: 43px;
+  padding: 0 14px;
+  border: 1px solid var(--primary-normal);
+  border-radius: 10px;
+  margin: 8px 0;
+  background-color: var(--primary-normal);
+  color: var(--line-normal);
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  display: block; /* 추가된 부분: block으로 변경하여 부모 컨테이너에서 정렬될 수 있도록 */
+  margin-left: auto; /* 추가된 부분: 자동으로 왼쪽 여백을 설정하여 가로 중앙 정렬 */
+  margin-right: auto; /* 추가된 부분: 자동으로 오른쪽 여백을 설정하여 가로 중앙 정렬 */
+}
+
+.umjunsik {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.button:hover {
+  background-color: var(--primary-neutral);
+}
+
+.button:active {
+  background-color: var(--primary-neutral);
+}
+
+.labelColor {
+  font-weight: bold;
+}
