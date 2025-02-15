@@ -1,6 +1,7 @@
 import Sen from "../styles/sementic.module.css";
 import CustomTextField from "../components/textfield/CustomTextField";
 import { useState } from "react";
+import { CustomButton } from "../components/button/CustomButton";
 
 export default function Root() {
   const [text, setText] = useState<string>("");
@@ -8,7 +9,7 @@ export default function Root() {
     setText(e.target.value);
   };
   return (
-    <div style={{ backgroundColor: "black" }}>
+    <div>
       <div
         className={`${Sen.text_primary_normal} ${Sen.title_1} ${Sen.normal}`}
       >
@@ -21,6 +22,7 @@ export default function Root() {
         value={text}
         onChange={handleChange}
       />
+      <CustomButton label="로그인" onClick={() => alert("로그인")} />
     </div>
   );
 }
