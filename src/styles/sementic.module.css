@@ -1,0 +1,194 @@
+:root {
+  /* Primary Colors */
+  --primary-normal: #7c3aed;
+  --primary-neutral: #6d28d9;
+  --primary-alternative: #5821b6;
+
+  /* Secondary Colors */
+  --secondary-normal: #8b5cf6;
+  --secondary-assistive: #a78bfa;
+  --secondary-alternative: #c4b5fd;
+
+  /* Background Colors */
+  --background-normal: #111111;
+  --background-neutral: #171717;
+  --background-alternative: #333333;
+
+  /* Label Colors */
+  --label-normal: #ffffff;
+  --label-neutral: #fafafa;
+  --label-alternative: #dedede;
+
+  /* Line Colors */
+  --line-normal: #ffffff;
+  --line-neutral: #f6f6f6;
+  --line-alternative: #f0f0f0;
+  --line-assistive: #ededed;
+
+  /* Common Colors */
+  --common-black: #000000;
+  --common-white: #ffffff;
+
+  /* Status Colors */
+  --status-success: #2e8b57;
+  --status-warning: #fdf27a;
+  --status-error: #c0392b;
+  --status-info: #3d9df7;
+
+  /* Font Family */
+  --font-primary: "normal", sans-serif;
+  --font-bold: "bold", sans-serif;
+  --font-thin: "thin", sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.thin {
+  font-weight: lighter;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.display_1 {
+  font-size: 36px;
+}
+
+.display_2 {
+  font-size: 32px;
+}
+
+.title_1 {
+  font-size: 28px;
+}
+
+.title_2 {
+  font-size: 24px;
+}
+
+.headline_1 {
+  font-size: 20px;
+}
+
+.headline_2 {
+  font-size: 18px;
+}
+
+.body {
+  font-size: 16px;
+}
+
+.label {
+  font-size: 14px;
+}
+
+.caption {
+  font-size: 12px;
+}
+
+.text_primary_normal {
+  color: var(--primary-normal);
+}
+
+.background_primary_normal {
+  background-color: var(--primary-normal);
+}
+
+.text_primary_neutral {
+  color: var(--primary-neutral);
+}
+
+.background_primary_neutral {
+  background-color: var(--primary-neutral);
+}
+
+.text_primary_alternative {
+  color: var(--primary-alternative);
+}
+
+.background_primary_alternative {
+  background-color: var(--primary-alternative);
+}
+
+.text_secondary_normal {
+  color: var(--secondary-normal);
+}
+
+.background_secondary_normal {
+  background-color: var(--secondary-normal);
+}
+
+.text_secondary_assistive {
+  color: var(--secondary-assistive);
+}
+
+.background_secondary_assistive {
+  background-color: var(--secondary-assistive);
+}
+
+.text_secondary_alternative {
+  color: var(--secondary-alternative);
+}
+
+.background_secondary_alternative {
+  background-color: var(--secondary-alternative);
+}
+
+.background_background_normal {
+  background-color: var(--background-normal);
+}
+
+.background_background_neutral {
+  background-color: var(--background-neutral);
+}
+
+.background_background_alternative {
+  background-color: var(--background-alternative);
+}
+
+.text_label_normal {
+  color: var(--label-normal);
+}
+
+.text_label_neutral {
+  color: var(--label-neutral);
+}
+
+.text_label_alternative {
+  color: var(--label-alternative);
+}
+
+.text_status_success {
+  color: var(--status-success);
+}
+
+.background_status_success {
+  background-color: var(--status-success);
+}
+
+.text_status_warning {
+  color: var(--status-warning);
+}
+
+.background_status_warning {
+  background-color: var(--status-warning);
+}
+
+.text_status_error {
+  color: var(--status-error);
+}
+
+.background_status_error {
+  background-color: var(--status-error);
+}
+
+.text_status_info {
+  color: var(--status-info);
+}
+
+.background_status_info {
+  background-color: var(--status-info);
+}
