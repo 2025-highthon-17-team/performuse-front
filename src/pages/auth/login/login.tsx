@@ -49,6 +49,13 @@ export default function LoginPage() {
         />
         <div className={Style.ButtonContainer}></div>
         <CustomButton label="로그인" onClick={handleLogin} />
+        <div
+          className={Sen.label}
+          style={{ textAlign: "center", marginTop: 20 }}
+        >
+          계정이 없으신가요?{" "}
+          <span className={Sen.text_primary_neutral}>회원가입</span>
+        </div>
       </div>
     </div>
   );
