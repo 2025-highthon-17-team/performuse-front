@@ -1,0 +1,30 @@
+/* login.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 콘텐츠가 상단과 하단에 배치되도록 */
+  height: 76vh; /* 화면 전체 높이를 채움 */
+  padding: 20px;
+}
+
+.spacer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.spacertwo {
+  margin-top: 20px;
+}
+
+.ButtonContainer {
+  margin-top: auto; /* 버튼을 항상 하단에 배치 */
+}
+
+.boxs {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-top: 10px; /* 입력 필드와 텍스트 간 간격 조정 */
+}

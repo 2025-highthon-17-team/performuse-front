@@ -4,7 +4,9 @@ import { useState } from "react";
 import CustomTextField from "../../../components/textfield/CustomTextField";
 import { CustomButton } from "../../../components/button/CustomButton";
 import Style from "../login/login.module.css";
+import { useNavigate } from "react-router-dom";
 export default function LoginPage() {
+  const navigate = useNavigate();
   const [loginText, setLoginText] = useState<string>("");
   const loginChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setLoginText(e.target.value);
@@ -23,7 +25,7 @@ export default function LoginPage() {
       await login(loginText, passwordText); // 로그인 요청 보내기
       alert("로그인 성공!");
     } catch (error) {
-      alert("로그인 실패!");
+      alert(`로그인 실패! ${error}`);
     }
   };
   return (
@@ -54,7 +56,15 @@ export default function LoginPage() {
           style={{ textAlign: "center", marginTop: 20 }}
         >
           계정이 없으신가요?{" "}
-          <span className={Sen.text_primary_neutral}>회원가입</span>
+          <span
+            className={Sen.text_primary_neutral}
+            style={{ cursor: "pointer" }}
+            onClick={() => {
+              navigate("/id");
+            }}
+          >
+            회원가입
+          </span>
         </div>
       </div>
     </div>
