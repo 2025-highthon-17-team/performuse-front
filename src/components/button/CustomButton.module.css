@@ -1,7 +1,7 @@
 @import "../../styles/sementic.module.css";
 
 .button {
-  width: 80%;
+  width: 95%;
   height: 43px;
   padding: 0 14px;
   border: 1px solid var(--primary-normal);
