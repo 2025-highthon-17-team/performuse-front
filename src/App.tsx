@@ -6,7 +6,7 @@ import ProfilePage from "./pages/profile";
 import Navigationbar from "./components/navigator/Navigationbar";
 import Backbutton from "./components/button/backbutton/Backbutton";
 import LoginPage from "./pages/auth/login/login";
-
+import IdPage from "./pages/auth/id/id";
 function App() {
   return (
     <div className="App">
@@ -19,6 +19,7 @@ function App() {
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="*" element={<div>Not Found</div>} />
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/id" element={<IdPage />} />
         </Routes>
       </BrowserRouter>
       <Navigationbar />
