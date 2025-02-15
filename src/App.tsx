@@ -6,6 +6,7 @@ import ProfilePage from "./pages/profile";
 import Navigationbar from "./components/navigator/Navigationbar";
 import Backbutton from "./components/button/backbutton/Backbutton";
 import LoginPage from "./pages/auth/login/login";
+import RoomPage from "./pages/room";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
           <Route path="/point" element={<PointPage />} />
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="*" element={<div>Not Found</div>} />
-          <Route path="/login" element={<LoginPage />} />
+          <Route path="/room/:id" element={<RoomPage />} />
+          <Route path="/auth/login" element={<LoginPage />} />
         </Routes>
       </BrowserRouter>
       <Navigationbar />
