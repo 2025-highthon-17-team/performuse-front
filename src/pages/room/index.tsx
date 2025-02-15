@@ -1,12 +1,13 @@
-import { useParams } from "react-router-dom";
-import RockandChamComponent from "../../components/quiz/rockandcham";
+// import { useParams } from "react-router-dom";
+// import ResultComponent from "../../components/quiz/ResultComponent";
+// import RockandChamComponent from "../../components/quiz/rockandcham";
 
 export default function RoomPage() {
-  const roomId = useParams<{ id: string }>().id;
-  const sendAnswer = (answer: string) => {
-    // eslint-disable-next-line
-    console.log(answer, roomId);
-  };
+  // const roomId = useParams<{ id: string }>().id;
+  // const sendAnswer = (answer: string) => {
+  //   // eslint-disable-next-line
+  //   console.log(answer, roomId);
+  // };
   return (
     <div>
       {/* <QuizComponent
@@ -18,7 +19,8 @@ export default function RoomPage() {
         sendAnswer={sendAnswer}
         selections={["선택1", "선택2", "선택3", "선택4"]}
       /> */}
-      <RockandChamComponent type="rock" time={5} sendAnswer={sendAnswer} />
+      {/* <RockandChamComponent type="rock" time={5} sendAnswer={sendAnswer} /> */}
+      {/* <ResultComponent type="wating" point={1} /> */}
     </div>
   );
 }
