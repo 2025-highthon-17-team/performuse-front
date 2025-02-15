@@ -1,0 +1,12 @@
+@import "../../styles/sementic.module.css";
+
+/* point.module.css */
+.container {
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 82%;
+  padding: 15px 20px;
+  padding-bottom: 160px;
+  border: 1px solid var(--border-neutral);
+  background-color: var(--background-neutral);
+}
