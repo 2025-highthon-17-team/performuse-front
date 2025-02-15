@@ -1,0 +1,36 @@
+@import "../../../styles/sementic.module.css";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 콘텐츠와 버튼 간의 공간을 배치 */
+  height: 100vh; /* 화면 전체 높이를 채움 */
+  padding: 20px;
+}
+
+.smallBox {
+  height: 15%;
+}
+
+.logoBox {
+  width: 150px;
+  height: 150px;
+  background-color: aliceblue;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.boxs {
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+.spacer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ButtonContainer {
+  margin: 20px 0;
+}
