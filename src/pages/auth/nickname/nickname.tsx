@@ -4,7 +4,6 @@ import CustomTextField from "../../../components/textfield/CustomTextField";
 import Style from "./nickname.module.css";
 import { CustomButton } from "../../../components/button/CustomButton";
 import { useAxiosCRUD } from "../../../hooks/client";
-import { sign } from "crypto";
 
 export default function NickNamePage() {
   const [loginText, setLoginText] = useState<string>("");
