@@ -4,11 +4,13 @@ import JoinPage from "./pages/join";
 import PointPage from "./pages/point";
 import ProfilePage from "./pages/profile";
 import Navigationbar from "./components/navigator/Navigationbar";
+import Backbutton from "./components/button/backbutton/Backbutton";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <Backbutton />
         <Routes>
           <Route path="/home" element={<Root />} />
           <Route path="/qr" element={<JoinPage />} />

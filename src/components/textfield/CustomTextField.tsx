@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Sen from "../../styles/sementic.module.css";
 import Style from "./CustomTextField.module.css";
 

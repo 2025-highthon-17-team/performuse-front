@@ -1,4 +1,3 @@
-import { useAxiosCRUD } from "../hooks/client";
 import Sen from "../styles/sementic.module.css";
 import CustomTextField from "../components/textfield/CustomTextField";
 import { useState } from "react";
