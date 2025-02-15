@@ -25,6 +25,7 @@ export default function LoginPage() {
       await login(loginText, passwordText); // 로그인 요청 보내기
       alert("로그인 성공!");
     } catch (error) {
+      // eslint-disable-next-line
       alert(`로그인 실패! ${error}`);
     }
   };
