@@ -4,7 +4,7 @@ import { useState } from "react";
 import { CustomButton } from "../button/CustomButton";
 import CustomTextField from "../textfield/CustomTextField";
 
-interface QuizComponentProps {
+export interface QuizComponentProps {
   title: string;
   question: string;
   point: number;
